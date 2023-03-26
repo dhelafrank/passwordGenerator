@@ -40,7 +40,9 @@ function generate() {
 
     const copyContent = async () =>{
         try{
-            await navigator.clipboard.writeText(output.value)
+            // output.select()
+            // output.setSelectionRange(0, 9999);
+            await navigator.clipboard.writeText(output.innerHTML)
             copyTextBtn.style="visibility:unset; color:#08962c; border-color:#08962c"
             copyTextBtn.innerHTML="copied!"
             output.style="transform:scale(1.1)"
