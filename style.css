@@ -20,10 +20,6 @@ body {
     justify-content: center;
     transition: all 700ms ease-in-out;
 }
-.container:hover{
-    transform: scale(1.01);
-}
-
 .section {
     width: 45%;
     margin: auto;
@@ -83,10 +79,11 @@ button:active {
     border-left: 2px solid #75e2ff;
 }
 
-input[type=text] {
+#output{
     font-size: 2.5rem;
     border-radius: 1rem;
     width: 70%;
+    height:3rem;
     text-align: center;
     padding: 1rem;
     background-color: #deedf1c5;
@@ -196,6 +193,9 @@ h2{
 
 /* media queries */
 @media screen and (max-width:500px) {
+    :root{
+        font-size:40%;
+    }
     .body{
         flex-direction: column;
     }

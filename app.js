@@ -32,8 +32,8 @@ function generate() {
     for (let i = 0; i < length; i++) {
         password += chars.charAt(Math.floor(Math.random() * chars.length));
     }
-    output.value = password;
-    if (output.value.length>2){
+    output.innerText = password;
+    if (output.innerText.length>2){
         copyTextBtn.style="visibility:unset";
     }
 }
