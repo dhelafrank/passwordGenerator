@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | DH</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="togglers.css">
+</head>
+
+<body>
+    <h1>Random Password Generator</h1>
+    <div class="body">
+        <div class="container">
+            <div class="section">
+                <span class="parameterContainer" id="rangeContainer">
+                    <input type="number" name="" id="charInput" min="8" max="20" value="9">
+                    <!-- <input type="range" name="" id="charLength" min="8" max="20" value="8"> -->
+                    <!-- <span id="chars" oninput="range.value=value">0</span>  -->
+                    <!-- <input type="number" name=""value="8" max="20" oninput="range.value=value"> -->
+                    Characters
+                </span>
+                
+                <span class="parameterContainer">Numbers
+                    <label class="checkbox">
+                        <input type="checkbox" id="numbers">
+                        <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                        </div>
+                    </label>
+                </span>
+
+                <span class="parameterContainer">Symbols
+                    <label class="checkbox">
+                        <input type="checkbox" id="symbols">
+                        <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                        </div>
+                    </label>
+                </span>
+
+                <span class="parameterContainer">Upper Case
+                    <label class="checkbox">
+                        <input type="checkbox" id="uppercase">
+                        <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                        </div>
+                    </label>
+                </span>
+
+                <span class="parameterContainer">Lower Case
+                    <label class="checkbox">
+                        <input type="checkbox" id="lowercase">
+                        <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                        </div>
+                    </label>
+                </span>
+            </div>
+
+
+            <div class="section" id="sect2">
+                <div id="sect21">
+                    <input type="text" name="" id="output" value="" maxlength="20">
+                    <h2 id="copyText" onclick="copyContent()">copy</h2>
+                </div>
+                <button id="genBtn" onclick="generate()"> GENERATE </button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- <span class="parameterContainer">Numbers 
+    <label class="checkbox">
+        <input type="checkbox">
+        <div class="toggler-slider">
+          <div class="toggler-knob"></div>
+        </div>
+      </label>
+   </span> -->
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

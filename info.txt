@@ -1,0 +1,6 @@
+color pallete
+
+1. #244d61
+2. #5689c0
+3. #75e2ff
+3. #eaebed

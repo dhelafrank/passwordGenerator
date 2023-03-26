@@ -1,0 +1,50 @@
+.checkbox {
+	display: block;
+	width: 45px;
+	height: 25px;
+	cursor: pointer;
+	position: relative;
+}
+
+.checkbox input[type="checkbox"] {
+	display: none;
+}
+
+.checkbox .toggler-slider {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+	background-color: #ccc;
+	position: absolute;
+	border-radius: 100px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.checkbox .toggler-knob {
+	position: absolute;
+	-webkit-transition: all 300ms ease;
+}   
+
+.checkbox .toggler-knob {
+	width:45%;
+	height:80%;
+	border-radius: 55%;
+	left: 3%;
+	background-color: #fff;
+    margin:auto;
+	
+}
+
+
+.checkbox input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
+	left:50%;
+    /* background: black; */
+}
+.checkbox input[type="checkbox"]:checked+.toggler-slider {
+	background-color: #44cc66;
+}
