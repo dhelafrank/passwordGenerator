@@ -86,6 +86,7 @@ button:active {
     height:3rem;
     text-align: center;
     padding: 1rem;
+    overflow: hidden;
     background-color: #deedf1c5;
     border: 1px solid #5689c0;
     backdrop-filter: blur(5px);

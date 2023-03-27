@@ -14,6 +14,10 @@ function generate() {
     copyTextBtn.style.visibility="hidden";
     // copyTextBtn.innerHTML="copy"
     // copyTextBtn.style="color:#fff; border-color:#fff"
+    if(length>20){
+        alert("password length cannot be less than 8 characters or greater than 20 characters")
+        return;
+    }
     if (lowercase) {
         chars += "abcdefghijklmnopqrstuvwxyz";
     }
