@@ -35,8 +35,8 @@ body {
 
 .container {
     /* padding:7rem; */
-    border: 2px solid #9eddfd;
-    border-radius: 1rem;
+    border: 1px solid #9eddfd;
+    border-radius: 2rem;
     background: #27d9e656;
     box-shadow: 0 0 10px #888;
     min-width: 50rem;
